@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Kartikey Tandon | Sophomore</title>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <!-- for logo -->
+            <a href="#" class="logo">Kartikey</a>
+            <!-- for navigation -->
+            <ul id="navbar">
+                <li><a href="#home" class="navLink">Home</a></li>
+                <li><a href="#about" class="navLink">About</a></li>
+                <li><a href="#portfolio" class="navLink">Portfolio</a></li>
+                <li><a href="#contact" class="navLink">Contact</a></li>
+                <!-- <li><a href="#blog" class="navLink">Blog</a></li> -->
+            </ul>
+            <!-- for menu -->
+            <div class="menu-icon">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Home -->
+    <section class="home container" id="home">
+        <div class="home-content">
+            <div class="home-img">
+                <img src="images/profile_photo.png" alt="Kartikey Tandon">
+            </div>
+            <div class="home-text">
+                <h3>HELLO</h3>
+                <h2>I'm <span class="color">Kartikey</span></h2>
+                <p>I'm a Front-end <span class="color">Web Developer</span> 
+                <br>and a <span class="color">C++</span> Problem Solver 
+                <br><span>from India</span>. Currently a <span>Sophomore</span>.
+                <br> Let's <span class="color">connect</span> here.</p>
+            </div>
+            <!-- Social -->
+            <div class="social">
+                <a href="https://www.instagram.com/kartikey.tandon_18/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://twitter.com/kartikeystwt" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/kartikey-tandon-526516204/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Making About Section -->
+    <section class="about container" id="about">
+        <h2 class="heading">About</h2>
+        <div class="about-content">
+            <div class="about-data">
+                <span>About Me</span>
+                <h2>Front-end Web Dev & C++ Problem Solver</h2>
+                <a href="Kartikey Resume.pdf" class="btn" download="">Download Resume<i class='bx bxs-download'></i></a>
+            </div>
+            <div class="about-text">
+                <p>Hey there! I am Kartikey Tandon and I am currenty pursuing Bachelor's in Computer Science at Dr. A.P.J. Abdul Kalam Technical University which is based in Lucknow, India. <br>
+                I am into <span class="color">Front-end Web Dev</span> and also a exploring different<span class="color"> Algorithms in C++</span>.
+                <br>
+                I am open to all the <span class="color">Freelance </span> and <span class="color">Internship </span> opportunities in this domain. <br>
+                Get in touch with me with the help of Contact Button.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Making Portfolio Section -->
+    <section class="portfolio container" id="portfolio">
+        <h2 class="heading">Portfolio</h2>
+        <div class="port-box1">
+        <div class="portfolio-content">
+            <div class="portfolio-box">
+                <h3 class="port-head">Virtual Keyboard</h3>
+                <a href="https://github.com/kartikeytandon/onlineKeyBoard" target="_blank"><img src="images/keyboard.png" alt="virtual_keyboard" class="portfolio-img"></a>
+            </div>
+        </div>
+        <div class="portfolio-content">
+            <div class="portfolio-box">
+                <h3 class="port-head">Virtual Keyboard</h3>
+                <img src="images/keyboard.png" alt="virtual_keyboard" class="portfolio-img">
+            </div>
+        </div>
+        </div>
+        <div class="port-box1">
+        <div class="portfolio-content">
+            <div class="portfolio-box">
+                <h3 class="port-head">Virtual Keyboard</h3>
+                <a href="#" target="_blank"><img src="images/keyboard.png" alt="virtual_keyboard" class="portfolio-img"></a>
+            </div>
+        </div>
+        <div class="portfolio-content">
+            <div class="portfolio-box">
+                <h3 class="port-head">Virtual Keyboard</h3>
+                <img src="images/keyboard.png" alt="virtual_keyboard" class="portfolio-img">
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- Making Contact Section -->
+    <section class="contact container" id="contact">
+        <h2 class="heading">Contact</h2>
+        <div class="contact-content">
+            <div class="basic-contact">
+                <h3>Address</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident vel perferendis reprehenderit dolores amet minima!</p>
+                <h3>Phone Number</h3>
+                <p>820949234</p>
+                <h3>Mail Address</h3>
+                <p>tandonkartikey11@gmail.com</p>
+            </div>
+            <div class="contact-form">
+                <form onsubmit="sendMail()">
+                    <h1>Say Hi!</h1>
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="E-Mail ID" required>
+                    <input type="text" id="phone" placeholder="Phone Number" required>
+                    <textarea id="message" rows="5" placeholder="How can I help you?"></textarea>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendMail {
+            Email.send({
+            Host : "smtp.gmail.com",
+            Username : "tandonkartikey11@gmail.com",
+            Password : "password",
+            To : 'them@website.com',
+            From : "you@isp.com",
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+            message => alert(message)
+        );  
+        }
+    </script>
+</body>
+</html> 
