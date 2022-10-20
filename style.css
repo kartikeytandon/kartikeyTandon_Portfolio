@@ -160,7 +160,7 @@ header {
 .heading {
     font-size: 5rem;
     text-transform: uppercase;
-    color: var(--heading-color);
+    color: rgb(197, 197, 197);
     text-align: center;
     margin-top: 8rem;
     margin-bottom: 2rem;
@@ -263,7 +263,7 @@ form {
 }
 .contact-form h1 {
     text-align: center;
-    color: #0d0f26;
+    color: #647bff;
 }
 #submit {
     margin: auto;
@@ -276,11 +276,14 @@ form {
 }
 form input, textarea {
     border: 0;
+    border-bottom: 5px solid #647bff;
     margin: 0.75rem;
     padding: 1.05rem;
     outline: none;
     background: #f5f5f5;
     width: 100%;
+    border-radius: 0.8rem;
+    resize: none;
 }
 .projects {
     border: 2px solid green;
@@ -311,6 +314,71 @@ form input, textarea {
 }
 .pro1 img {
     width: 25rem;
+}
+.skillset {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+#code-para {
+    /* border: 2px solid red; */
+    margin-top: 1.5rem;
+}
+.fluid {
+    border: 0.4rem solid white;
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+#skill1 {
+    font-weight: bold;
+    color:#546eff;
+    border: 1px solid white;
+    width: 30%;
+    background-color: white;
+}
+#skill2 {
+    font-weight: bold;
+    color:#546eff;
+    border: 1px solid white;
+    width: 65%;
+    background-color: white;
+}
+#skill3 {
+    font-weight: bold;
+    color:#546eff;
+    border: 1px solid white;
+    width: 40%;
+    background-color: white;
+}
+#skill4 {
+    font-weight: bold;
+    color:#546eff;
+    border: 1px solid white;
+    width: 50%;
+    background-color: white;
+}
+.code {
+    color: white;
+    display: block;
+}
+.skillset h2 {
+    color: #647bff;
+}
+.skill {
+    /* border: 2px solid white; */
+    padding: 2rem;
+    text-align: center;
+    /* margin: 0.2rem; */
+}
+#submit {
+    background-color: gray;
+    margin: auto;
+    border-radius: 0.9rem;
+    font-weight: 700;
+}
+#submit:hover {
+    background-color: yellow;
+    cursor: pointer;
 }
 footer {
     background-color: var(--main-color);
