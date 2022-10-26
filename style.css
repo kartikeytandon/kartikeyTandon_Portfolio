@@ -10,6 +10,21 @@
     scroll-behavior: smooth;
 }
 
+/* Making custom scrollbar */
+body::-webkit-scrollbar {
+    width: 0.6rem;
+}
+body::-webkit-scrollbar-track {
+    background-color: #090a1a;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 10rem;
+    background-color: #647bff;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #546eff;
+}
+
 /* Making Variables */
 :root {
     --main-color: #647bff;
@@ -381,6 +396,7 @@ form input, textarea {
     cursor: pointer;
 }
 footer {
+    width: 100%;
     background-color: var(--main-color);
     margin-top: 3rem;
     padding: 5rem;
