@@ -222,9 +222,6 @@ header {
     margin-bottom: 1.5rem;
     /* border: 2px solid red; */
 }
-.portfolio-content {
-    /* border: 2px solid cyan; */
-}
 .port-box1 {
     display: flex;
     /* border: 2px solid red; */
@@ -450,9 +447,6 @@ hr {
         display: flex;
         /* flex-direction: column; */
         justify-content: center;
-    }
-    .contact-form {
-        /* background-color: yellow; */
     }
 } 
 @media(max-width: 490px) {
